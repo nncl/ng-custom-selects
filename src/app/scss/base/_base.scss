@@ -9,3 +9,70 @@
   font-size: 14px;
   line-height: 16px;
 }
+
+.ng-select {
+  input,
+  .ng-select-container {
+    cursor: pointer !important;
+  }
+
+  .ng-clear-wrapper {
+    display: none;
+  }
+
+  .ng-select-container {
+    border: 1px solid #E5E7F1;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 17px 24px;
+  }
+
+  .ng-placeholder {
+    text-transform: uppercase;
+    color: #1E2959;
+  }
+
+  .ng-input input {
+    padding: 0;
+  }
+
+  .ng-input {
+    padding: 0 24px;
+  }
+
+  .ng-has-value {
+    padding-top: 26px;
+    padding-bottom: 8px;
+
+    .ng-placeholder {
+      position: absolute;
+      font-size: 10px;
+      top: 0;
+      transition: 0.2s;
+      margin-top: 10px;
+      display: block !important;
+    }
+  }
+
+  .ng-dropdown-panel {
+    padding: 30px 0 0 0;
+    background: #F3F5FE;
+    border-radius: 0 0 24px 24px;
+    margin-top: -30px;
+  }
+
+  .ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
+    line-height: 42px;
+    padding: 0 24px;
+
+    &:nth-child(2n+2) {
+      background: rgba(0, 87, 254, .03);
+    }
+  }
+
+  .ng-select-container {
+    z-index: 9999 !important;
+    background: white;
+  }
+
+}

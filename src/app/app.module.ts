@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { InputComponent } from './components/input/input.component';
 import { SimpleComponent } from './pages/simple/simple.component';
 import { FormsModule } from '@angular/forms';
+import { SelectLiteComponent } from './components/select-lite/select-lite.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
-    SimpleComponent
+    SimpleComponent,
+    SelectLiteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,13 +1,16 @@
-app-input {
+app-input,
+app-select-lite {
   color: #1E2959;
-  display: inline-block;
+  //display: inline-block;
 
   div,
   label,
   input {
     color: inherit;
   }
+}
 
+app-input {
   div {
     position: relative;
   }

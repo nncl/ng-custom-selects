@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./simple.component.scss']
 })
 export class SimpleComponent implements OnInit {
-  selected: string;
+  group: string;
+  selectLite: string;
 
   constructor() { }
 

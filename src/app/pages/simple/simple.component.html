@@ -1,5 +1,14 @@
-<app-input label="Grupo de Evento"
-           name="group"
-           [(ngModel)]="selected"></app-input>
+<div>
+  <app-input label="Grupo de Evento"
+             name="group"
+             [(ngModel)]="group"></app-input>
 
-<pre>{{selected | json}}</pre>
+  <pre>{{group | json}}</pre>
+</div>
+
+<div>
+  <app-select-lite name="selectLite"
+                   [(ngModel)]="selectLite"></app-select-lite>
+
+  <pre>{{selectLite | json}}</pre>
+</div>
