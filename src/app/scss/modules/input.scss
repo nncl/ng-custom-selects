@@ -1,5 +1,6 @@
 app-input,
-app-select-lite {
+app-select-lite,
+app-select-user {
   color: #1E2959;
   //display: inline-block;
 
@@ -54,6 +55,45 @@ app-input {
         display: block;
         transform: translateY(0)
       }
+    }
+  }
+}
+
+app-select-user {
+  .space .ng-select-container {
+    padding-left: 48px !important;
+  }
+
+  .ng-option:not(.ng-option--custom) {
+    padding-left: 46px !important;
+  }
+
+  .space .ng-input {
+    padding-left: 48px;
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+  }
+
+  .ng-option {
+    position: relative;
+
+    img {
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+    }
+
+    span {
+      position: inherit;
+      top: 2px;
     }
   }
 }

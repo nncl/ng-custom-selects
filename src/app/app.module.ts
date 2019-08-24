@@ -8,13 +8,15 @@ import { SimpleComponent } from './pages/simple/simple.component';
 import { FormsModule } from '@angular/forms';
 import { SelectLiteComponent } from './components/select-lite/select-lite.component';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { SelectUserComponent } from './components/select-user/select-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
     SimpleComponent,
-    SelectLiteComponent
+    SelectLiteComponent,
+    SelectUserComponent
   ],
   imports: [
     BrowserModule,

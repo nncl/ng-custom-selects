@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgSelectConfig } from '@ng-select/ng-select';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'custom-inputs';
+
+  constructor(private config: NgSelectConfig) {
+    this.config.notFoundText = 'Nenhum resultado encontrado';
+  }
 }

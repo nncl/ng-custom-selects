@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SimpleComponent implements OnInit {
   group: string;
   selectLite: string;
+  user: string;
 
   constructor() { }
 
