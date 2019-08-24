@@ -1,0 +1,56 @@
+app-input {
+  color: #1E2959;
+  display: inline-block;
+
+  div,
+  label,
+  input {
+    color: inherit;
+  }
+
+  div {
+    position: relative;
+  }
+
+  label {
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-6px);
+    bottom: 0;
+    width: 100%;
+    transition: 0.2s;
+    pointer-events: none;
+    left: 24px;
+
+    //display: flex;
+    //align-items: center;
+    //padding-top: 3px;
+  }
+
+  input {
+    border: 1px solid #E5E7F1;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 17px 24px;
+    width: 100%;
+    overflow: hidden;
+
+    &:focus,
+    &.has-value {
+      padding-top: 26px;
+      padding-bottom: 8px;
+
+      & + label {
+        top: 0;
+        margin-top: 10px;
+        font-size: 10px;
+        line-height: 16px;
+        left: 24px;
+        padding: 0;
+        display: block;
+        transform: translateY(0)
+      }
+    }
+  }
+}

@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+// Base
+@import "app/scss/base/base";
+
+// Modules
+@import "app/scss/modules/input";
