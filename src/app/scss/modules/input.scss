@@ -1,6 +1,7 @@
 app-input,
 app-select-lite,
-app-select-user {
+app-select-user,
+app-select-multiple {
   color: #1E2959;
   //display: inline-block;
 
@@ -95,5 +96,20 @@ app-select-user {
       position: inherit;
       top: 2px;
     }
+  }
+}
+
+app-select-multiple {
+  .ng-input {
+    padding: 0 !important;
+  }
+
+  .ng-value-icon {
+    display: none;
+  }
+
+  .ng-value-container .ng-value:not(:nth-last-of-type(2)):after {
+    content: ', ';
+    margin-right: 5px;
   }
 }

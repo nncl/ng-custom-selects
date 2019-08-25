@@ -9,6 +9,7 @@ export class SimpleComponent implements OnInit {
   group: string;
   selectLite: string;
   user: string;
+  groups: [];
 
   constructor() { }
 

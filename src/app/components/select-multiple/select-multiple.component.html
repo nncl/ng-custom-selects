@@ -1,0 +1,12 @@
+<ng-select [items]="groups"
+           bindLabel="name"
+           placeholder="Grupos"
+           bindValue="id"
+           [ngClass]="{'space' : value}"
+           [(ngModel)]="value"
+           [multiple]="true"
+           [closeOnSelect]="false">
+  <ng-template ng-option-tmp let-item="item" let-item$="item$" let-index="index">
+    <input id="item-{{index}}" type="checkbox" [ngModel]="item$.selected" /> {{item.name}}
+  </ng-template>
+</ng-select>
