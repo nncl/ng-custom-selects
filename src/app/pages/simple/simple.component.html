@@ -1,28 +1,31 @@
-<div>
-  <app-input label="Grupo de Evento"
-             name="group"
-             [(ngModel)]="group"></app-input>
+<main>
+  <div>
+    <app-input label="Grupo de Evento"
+               name="group"
+               [(ngModel)]="group"></app-input>
 
-  <pre>{{group | json}}</pre>
-</div>
+    <pre>{{group | json}}</pre>
+  </div>
 
-<div>
-  <app-select-lite name="selectLite"
-                   [(ngModel)]="selectLite"></app-select-lite>
+  <div>
+    <app-select-lite name="selectLite"
+                     [(ngModel)]="selectLite"></app-select-lite>
 
-  <pre>{{selectLite | json}}</pre>
-</div>
+    <pre>{{selectLite | json}}</pre>
+  </div>
 
-<div>
-  <app-select-user name="user"
-                   [(ngModel)]="user"></app-select-user>
+  <div>
+    <app-select-user name="user"
+                     [(ngModel)]="user"></app-select-user>
 
-  <pre>{{user | json}}</pre>
-</div>
+    <pre>{{user | json}}</pre>
+  </div>
 
-<div>
-  <app-select-multiple name="groups"
-                       [(ngModel)]="groups"></app-select-multiple>
+  <div>
+    <app-select-multiple name="groups"
+                         [(ngModel)]="groups"></app-select-multiple>
 
-  <pre>{{groups | json}}</pre>
-</div>
+    <pre>{{groups | json}}</pre>
+  </div>
+
+</main>

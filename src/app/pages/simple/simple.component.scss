@@ -1,0 +1,26 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > div {
+    flex: 1;
+    padding: 0 5px;
+    margin-bottom: 15px;
+
+    &:first-child {
+      flex: 0 0 240px;
+    }
+
+    &:nth-child(2) {
+      flex-basis: 400px;
+    }
+
+    &:nth-child(3) {
+      flex: 0 0 150px;
+    }
+  }
+}
+
+pre {
+  margin: 0;
+}
